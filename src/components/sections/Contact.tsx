@@ -4,6 +4,7 @@ import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { Container } from "@/components/ui/Container";
 import { SectionHeading } from "@/components/ui/SectionHeading";
+import { ScrollReveal } from "@/components/ui/ScrollReveal";
 import { Button } from "@/components/ui/Button";
 import { personalInfo } from "@/lib/data";
 import { contactFormSchema } from "@/lib/validators";
@@ -57,9 +58,12 @@ export function Contact() {
   return (
     <section id="contact" className="py-24">
       <Container>
-        <SectionHeading label="Say hello" title="Get in Touch" />
+        <ScrollReveal>
+          <SectionHeading label="Say hello" title="Get in Touch" />
+        </ScrollReveal>
 
         <div className="grid gap-12 lg:grid-cols-2">
+          <ScrollReveal delay={0.1}>
           <div>
             <p className="mb-6 max-w-md text-muted">
               I&apos;m always open to discussing new opportunities, interesting
@@ -81,7 +85,9 @@ export function Contact() {
               ))}
             </div>
           </div>
+          </ScrollReveal>
 
+          <ScrollReveal delay={0.2}>
           <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col gap-4">
             <div>
               <label htmlFor="name" className="mb-1 block text-sm font-medium">
@@ -146,6 +152,7 @@ export function Contact() {
               Rate limited to 3 submissions per 15 minutes.
             </p>
           </form>
+          </ScrollReveal>
         </div>
       </Container>
     </section>
