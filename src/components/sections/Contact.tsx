@@ -2,23 +2,14 @@
 
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { z } from "zod";
 import { Container } from "@/components/ui/Container";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { Button } from "@/components/ui/Button";
 import { personalInfo } from "@/lib/data";
+import { contactFormSchema } from "@/lib/validators";
 import { Github, Linkedin, Mail } from "lucide-react";
 import { useState } from "react";
 import type { ContactFormData } from "@/types";
-
-const contactSchema = z.object({
-  name: z.string().min(2, "Name must be at least 2 characters"),
-  email: z.string().email("Please enter a valid email address"),
-  message: z
-    .string()
-    .min(10, "Message must be at least 10 characters")
-    .max(1000, "Message must be under 1000 characters"),
-});
 
 const socialIcons: Record<string, React.ReactNode> = {
   GitHub: <Github size={18} />,
@@ -38,7 +29,7 @@ export function Contact() {
     reset,
     formState: { errors, isSubmitting },
   } = useForm<ContactFormData>({
-    resolver: zodResolver(contactSchema),
+    resolver: zodResolver(contactFormSchema),
   });
 
   async function onSubmit(data: ContactFormData) {
