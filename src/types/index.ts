@@ -1,12 +1,9 @@
 export interface CaseStudy {
-  company: string;
+  project: string;
   url?: string;
-  role: string;
+  position: string;
   period: string;
-  context: string;
-  problem: string;
-  decisions: string[];
-  impact: string;
+  highlights: string[];
   techStack: string[];
 }
 

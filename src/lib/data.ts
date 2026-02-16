@@ -19,21 +19,15 @@ export const personalInfo: PersonalInfo = {
 
 export const caseStudies: CaseStudy[] = [
   {
-    company: "Macy's",
-    role: "Software Engineer at Grid Dynamics",
+    project: "Macy's",
+    position: "Software Engineer at Grid Dynamics",
     period: "May 2025 — Feb 2026",
-    context:
-      "Internal platform team supporting one of the largest US department store retailers.",
-    problem:
-      "The platform needed reusable frontend components and reliable CI/CD workflows to improve development speed and UI consistency across teams.",
-    decisions: [
+    highlights: [
       "Built reusable React components for internal platform, improving development speed and UI consistency",
       "Optimized frontend performance and reduced build issues through improved CI/CD workflows",
       "Collaborated with UX, QA, and backend teams to deliver production-ready features",
       "Maintained high code quality through testing, code reviews, and architectural improvements",
     ],
-    impact:
-      "Improved development speed and UI consistency across the internal platform while maintaining high code quality standards.",
     techStack: [
       "TypeScript",
       "React",
@@ -46,21 +40,15 @@ export const caseStudies: CaseStudy[] = [
     ],
   },
   {
-    company: "PetSmart",
+    project: "PetSmart",
     url: "https://www.petsmart.com/",
-    role: "Software Engineer at Grid Dynamics",
+    position: "Software Engineer at Grid Dynamics",
     period: "Feb 2024 — Apr 2025",
-    context:
-      "High-traffic retail e-commerce platform serving millions of monthly visitors.",
-    problem:
-      "The platform required customer-facing feature development alongside improved deployment reliability and test coverage.",
-    decisions: [
+    highlights: [
       "Implemented customer-facing features using React and Next.js for a high-traffic retail platform",
       "Improved deployment reliability by coordinating with QA and DevOps across multiple environments",
       "Strengthened test coverage using Jest and CI pipelines",
     ],
-    impact:
-      "Delivered reliable customer-facing features while improving deployment processes and test coverage across the platform.",
     techStack: [
       "TypeScript",
       "React",
@@ -73,58 +61,40 @@ export const caseStudies: CaseStudy[] = [
     ],
   },
   {
-    company: "SBandCO",
+    project: "SBandCO",
     url: "https://www.sbandco.com/",
-    role: "Software Engineer at Grid Dynamics",
+    position: "Software Engineer at Grid Dynamics",
     period: "Nov 2023 — Jan 2024",
-    context:
-      "Greenfield build for a boutique e-commerce brand launching their first digital storefront.",
-    problem:
-      "No existing codebase — the team needed to build a new React/Next.js application from scratch with solid architecture foundations.",
-    decisions: [
+    highlights: [
       "Helped build a new React/Next.js application from the ground up",
       "Contributed to early architecture decisions and core UI components",
       "Supported deployment workflows in a small, fast-moving team",
     ],
-    impact:
-      "Delivered a production-ready storefront built from scratch with solid architecture and deployment workflows.",
     techStack: ["TypeScript", "React", "Next.js", "Netlify", "Jest"],
   },
   {
-    company: "American Eagle",
+    project: "American Eagle",
     url: "https://www.ae.com/intl/en",
-    role: "Software Engineer at Grid Dynamics",
+    position: "Software Engineer at Grid Dynamics",
     period: "Aug 2021 — Oct 2023",
-    context:
-      "Large-scale e-commerce platform for a global fashion retailer with high-traffic pages and complex product flows.",
-    problem:
-      "The platform required ongoing feature development and maintenance using Ember and TypeScript across a large codebase.",
-    decisions: [
+    highlights: [
       "Implemented features across a large-scale e-commerce platform using Ember and TypeScript",
       "Maintained and enhanced existing web client functionality for high-traffic pages",
       "Participated in sprint planning, demos, and backlog refinement with cross-functional teams",
     ],
-    impact:
-      "Contributed to a stable, high-traffic e-commerce platform over 2+ years of continuous feature development.",
     techStack: ["TypeScript", "HTML", "CSS", "Ember", "MirageJS"],
   },
   {
-    company: "Coligo",
+    project: "Coligo",
     url: "https://desktop.coligo.com/",
-    role: "Frontend Developer at Summa Communications",
+    position: "Frontend Developer at Summa Communications",
     period: "Jul 2018 — Jul 2021",
-    context:
-      "Desktop and web application development for an enterprise communication platform.",
-    problem:
-      "The product needed both a desktop app and web interface built and maintained with consistent functionality.",
-    decisions: [
+    highlights: [
       "Developed and maintained desktop and web client using Angular and Electron",
       "Implemented new UI features and resolved production defects",
       "Collaborated with senior engineers to translate requirements into functional components",
       "Strengthened core frontend skills across JavaScript, HTML, CSS, and TypeScript",
     ],
-    impact:
-      "Delivered and maintained a cross-platform desktop and web application used by enterprise clients.",
     techStack: ["TypeScript", "HTML", "CSS", "Angular", "Electron"],
   },
 ];
@@ -159,15 +129,15 @@ export const engineeringPrinciples: Principle[] = [
 
 export const techStack: TechCategory[] = [
   {
-    name: "Languages",
+    name: "Languages:",
     items: ["JavaScript (ES6+)", "TypeScript", "HTML5", "CSS3"],
   },
   {
-    name: "Frontend",
+    name: "Frontend:",
     items: [
       "React",
       "Next.js",
-      "Redux Toolkit (RTK)",
+      "RTK",
       "RTK Query",
       "TanStack Query",
       "Material UI",
@@ -176,19 +146,19 @@ export const techStack: TechCategory[] = [
     ],
   },
   {
-    name: "Styling & Build Tools",
+    name: "Styling & Build Tools:",
     items: ["SCSS", "CSS Modules", "Webpack"],
   },
   {
-    name: "Testing",
+    name: "Testing:",
     items: ["Vitest", "Jest"],
   },
   {
-    name: "Backend & Desktop",
+    name: "Backend & Desktop:",
     items: ["Node.js", "MongoDB", "Electron"],
   },
   {
-    name: "DevOps & Tooling",
+    name: "DevOps & Tooling:",
     items: [
       "Git",
       "Bitbucket",
