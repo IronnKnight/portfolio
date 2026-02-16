@@ -12,11 +12,11 @@ export function TechStack() {
           <SectionHeading label="What I use" title="Tech Stack" />
         </ScrollReveal>
 
-        <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="flex flex-col gap-4">
           {techStack.map((category, index) => (
             <ScrollReveal key={category.name} delay={index * 0.1}>
-              <div>
-                <h3 className="mb-4 font-mono text-sm font-medium text-muted">
+              <div className="flex flex-col gap-3 sm:flex-row sm:items-baseline">
+                <h3 className="shrink-0 font-mono text-sm font-medium text-muted sm:w-48">
                   {category.name}
                 </h3>
                 <div className="flex flex-wrap gap-2">
