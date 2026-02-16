@@ -4,6 +4,7 @@ import { ScrollReveal } from "@/components/ui/ScrollReveal";
 import { Card } from "@/components/ui/Card";
 import { Badge } from "@/components/ui/Badge";
 import { caseStudies } from "@/lib/data";
+import { ExternalLink } from "lucide-react";
 
 export function Experience() {
   return (
@@ -18,7 +19,19 @@ export function Experience() {
             <ScrollReveal key={study.company} delay={index * 0.1}>
               <Card>
                 <div className="mb-4 flex flex-col gap-1 sm:flex-row sm:items-baseline sm:justify-between">
-                  <h3 className="text-xl font-semibold">{study.company}</h3>
+                  {study.url ? (
+                    <a
+                      href={study.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1.5 text-xl font-semibold transition-colors hover:text-accent"
+                    >
+                      {study.company}
+                      <ExternalLink size={16} />
+                    </a>
+                  ) : (
+                    <h3 className="text-xl font-semibold">{study.company}</h3>
+                  )}
                   <span className="font-mono text-sm text-muted">
                     {study.period}
                   </span>
