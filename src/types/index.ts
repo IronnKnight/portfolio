@@ -1,5 +1,6 @@
 export interface CaseStudy {
   company: string;
+  url?: string;
   role: string;
   period: string;
   context: string;

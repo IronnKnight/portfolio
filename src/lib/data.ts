@@ -9,7 +9,7 @@ export const personalInfo: PersonalInfo = {
   name: "Nikola Stefanovic",
   title: "Senior Frontend Engineer",
   statement:
-    "Building scalable web applications for enterprise clients with 7+ years of experience delivering high-impact solutions across e-commerce and SaaS platforms.",
+    "Frontend Software Engineer with 7+ years of experience building scalable web applications for large e-commerce and enterprise clients. Specialized in React, Next.js, TypeScript, and modern frontend architecture, with a focus on performance and code quality. Collaborates closely with design and backend teams to deliver cohesive, production-ready solutions.",
   socials: [
     { label: "GitHub", url: "https://github.com/nikolastef" },
     { label: "LinkedIn", url: "https://linkedin.com/in/nikolastef" },
@@ -20,113 +20,112 @@ export const personalInfo: PersonalInfo = {
 export const caseStudies: CaseStudy[] = [
   {
     company: "Macy's",
-    role: "Senior Frontend Engineer",
-    period: "2023 — Present",
+    role: "Software Engineer at Grid Dynamics",
+    period: "May 2025 — Feb 2026",
     context:
       "Internal platform team supporting one of the largest US department store retailers.",
     problem:
-      "Fragmented frontend tooling across teams led to inconsistent UX, slow feature delivery, and duplicated effort across multiple product squads.",
+      "The platform needed reusable frontend components and reliable CI/CD workflows to improve development speed and UI consistency across teams.",
     decisions: [
-      "Architected a shared React component library used across 4 product teams",
-      "Established CI/CD pipelines reducing build times by 40%",
-      "Led migration from legacy jQuery modules to React with TypeScript",
-      "Introduced automated visual regression testing with Chromatic",
+      "Built reusable React components for internal platform, improving development speed and UI consistency",
+      "Optimized frontend performance and reduced build issues through improved CI/CD workflows",
+      "Collaborated with UX, QA, and backend teams to deliver production-ready features",
+      "Maintained high code quality through testing, code reviews, and architectural improvements",
     ],
     impact:
-      "Reduced cross-team UI inconsistencies by 60% and cut average feature delivery time from 3 weeks to 1.5 weeks.",
+      "Improved development speed and UI consistency across the internal platform while maintaining high code quality standards.",
     techStack: [
-      "React",
       "TypeScript",
-      "Redux Toolkit",
+      "React",
+      "RTK",
+      "RTK Query",
       "Material UI",
-      "Jenkins",
-      "Docker",
+      "HTML",
+      "CSS",
+      "Vitest",
     ],
   },
   {
     company: "PetSmart",
-    role: "Frontend Engineer",
-    period: "2022 — 2023",
+    url: "https://www.petsmart.com/",
+    role: "Software Engineer at Grid Dynamics",
+    period: "Feb 2024 — Apr 2025",
     context:
       "High-traffic retail e-commerce platform serving millions of monthly visitors.",
     problem:
-      "Deployment reliability issues and slow page loads were impacting conversion rates during peak traffic events.",
+      "The platform required customer-facing feature development alongside improved deployment reliability and test coverage.",
     decisions: [
-      "Migrated key pages to Next.js for server-side rendering and improved SEO",
-      "Implemented performance monitoring and Core Web Vitals tracking",
-      "Built feature flag system for safer production deployments",
-      "Optimized critical rendering path reducing LCP by 35%",
+      "Implemented customer-facing features using React and Next.js for a high-traffic retail platform",
+      "Improved deployment reliability by coordinating with QA and DevOps across multiple environments",
+      "Strengthened test coverage using Jest and CI pipelines",
     ],
     impact:
-      "Achieved 99.9% deployment success rate and improved Lighthouse performance scores from 62 to 91.",
+      "Delivered reliable customer-facing features while improving deployment processes and test coverage across the platform.",
     techStack: [
+      "TypeScript",
       "React",
       "Next.js",
-      "TypeScript",
-      "Tailwind CSS",
-      "ArgoCD",
-      "Vercel",
+      "Redux Toolkit",
+      "RTK Query",
+      "Jenkins",
+      "Edgio",
+      "Jest",
     ],
   },
   {
     company: "SBandCO",
-    role: "Frontend Engineer",
-    period: "2021 — 2022",
+    url: "https://www.sbandco.com/",
+    role: "Software Engineer at Grid Dynamics",
+    period: "Nov 2023 — Jan 2024",
     context:
       "Greenfield build for a boutique e-commerce brand launching their first digital storefront.",
     problem:
-      "No existing codebase or technical infrastructure — needed to make foundational architecture decisions that would scale.",
+      "No existing codebase — the team needed to build a new React/Next.js application from scratch with solid architecture foundations.",
     decisions: [
-      "Chose Next.js with App Router for SEO-critical product pages",
-      "Designed component architecture with atomic design principles",
-      "Set up headless CMS integration for content management",
-      "Implemented responsive design system with Tailwind CSS",
+      "Helped build a new React/Next.js application from the ground up",
+      "Contributed to early architecture decisions and core UI components",
+      "Supported deployment workflows in a small, fast-moving team",
     ],
     impact:
-      "Delivered production-ready storefront in 4 months, handling 10K+ daily visitors from launch day.",
-    techStack: [
-      "React",
-      "Next.js",
-      "TypeScript",
-      "Tailwind CSS",
-      "TanStack Query",
-    ],
+      "Delivered a production-ready storefront built from scratch with solid architecture and deployment workflows.",
+    techStack: ["TypeScript", "React", "Next.js", "Netlify", "Jest"],
   },
   {
     company: "American Eagle",
-    role: "Frontend Engineer",
-    period: "2019 — 2021",
+    url: "https://www.ae.com/intl/en",
+    role: "Software Engineer at Grid Dynamics",
+    period: "Aug 2021 — Oct 2023",
     context:
-      "Large-scale e-commerce platform for a global fashion retailer with complex product catalog and checkout flows.",
+      "Large-scale e-commerce platform for a global fashion retailer with high-traffic pages and complex product flows.",
     problem:
-      "Legacy Ember codebase was difficult to maintain, and the team needed to modernize while keeping the storefront running.",
+      "The platform required ongoing feature development and maintenance using Ember and TypeScript across a large codebase.",
     decisions: [
-      "Led incremental migration strategy from Ember to TypeScript-first patterns",
-      "Refactored checkout flow reducing cart abandonment by 15%",
-      "Built reusable component patterns adopted across 3 feature teams",
-      "Mentored junior developers on TypeScript best practices",
+      "Implemented features across a large-scale e-commerce platform using Ember and TypeScript",
+      "Maintained and enhanced existing web client functionality for high-traffic pages",
+      "Participated in sprint planning, demos, and backlog refinement with cross-functional teams",
     ],
     impact:
-      "Maintained 2+ years of zero-downtime deployments while progressively modernizing the frontend stack.",
-    techStack: ["Ember", "TypeScript", "SCSS", "Redux", "Webpack", "Jest"],
+      "Contributed to a stable, high-traffic e-commerce platform over 2+ years of continuous feature development.",
+    techStack: ["TypeScript", "HTML", "CSS", "Ember", "MirageJS"],
   },
   {
-    company: "Coligo / Summa Communications",
-    role: "Frontend Developer",
-    period: "2017 — 2019",
+    company: "Coligo",
+    url: "https://desktop.coligo.com/",
+    role: "Frontend Developer at Summa Communications",
+    period: "Jul 2018 — Jul 2021",
     context:
-      "Desktop and web application development for enterprise communication platforms.",
+      "Desktop and web application development for an enterprise communication platform.",
     problem:
-      "Clients needed both a desktop app and web interface with shared business logic and consistent UX.",
+      "The product needed both a desktop app and web interface built and maintained with consistent functionality.",
     decisions: [
-      "Built cross-platform desktop app using Angular and Electron",
-      "Designed shared service layer consumed by both desktop and web clients",
-      "Implemented real-time communication features with WebSocket integration",
-      "Established testing practices with unit and integration test coverage",
+      "Developed and maintained desktop and web client using Angular and Electron",
+      "Implemented new UI features and resolved production defects",
+      "Collaborated with senior engineers to translate requirements into functional components",
+      "Strengthened core frontend skills across JavaScript, HTML, CSS, and TypeScript",
     ],
     impact:
-      "Delivered unified desktop and web experience used by 500+ enterprise users daily.",
-    techStack: ["Angular", "Electron", "TypeScript", "RxJS", "Node.js"],
+      "Delivered and maintained a cross-platform desktop and web application used by enterprise clients.",
+    techStack: ["TypeScript", "HTML", "CSS", "Angular", "Electron"],
   },
 ];
 
@@ -160,31 +159,46 @@ export const engineeringPrinciples: Principle[] = [
 
 export const techStack: TechCategory[] = [
   {
+    name: "Languages",
+    items: ["JavaScript (ES6+)", "TypeScript", "HTML5", "CSS3"],
+  },
+  {
     name: "Frontend",
     items: [
       "React",
       "Next.js",
-      "TypeScript",
-      "Tailwind CSS",
-      "Redux Toolkit",
+      "Redux Toolkit (RTK)",
+      "RTK Query",
       "TanStack Query",
       "Material UI",
+      "Ember",
+      "Angular",
     ],
   },
   {
-    name: "Previously Used",
-    items: ["Ember", "Angular", "Electron"],
+    name: "Styling & Build Tools",
+    items: ["SCSS", "CSS Modules", "Webpack"],
   },
   {
     name: "Testing",
     items: ["Vitest", "Jest"],
   },
   {
-    name: "Tools & Infrastructure",
-    items: ["Git", "Docker", "Jenkins", "ArgoCD", "Vercel", "Webpack"],
+    name: "Backend & Desktop",
+    items: ["Node.js", "MongoDB", "Electron"],
   },
   {
-    name: "Backend Awareness",
-    items: ["Node.js", "MongoDB"],
+    name: "DevOps & Tooling",
+    items: [
+      "Git",
+      "Bitbucket",
+      "Jira",
+      "Docker",
+      "Jenkins",
+      "Bamboo",
+      "ArgoCD",
+      "Netlify",
+      "Edgio",
+    ],
   },
 ];
