@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: "*",
       allow: "/",
     },
-    sitemap: "https://nikolastefanovic.com/sitemap.xml",
+    sitemap: "https://portfolio-nj8tyq97z-iron-knight.vercel.app/sitemap.xml",
   };
 }

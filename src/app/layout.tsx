@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-const siteUrl = "https://nikolastefanovic.com";
+const siteUrl = "https://portfolio-nj8tyq97z-iron-knight.vercel.app/";
 
 export const metadata: Metadata = {
   title: "Nikola Stefanovic — Senior Frontend Engineer",
