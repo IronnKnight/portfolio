@@ -13,9 +13,32 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+const siteUrl = "https://nikolastefanovic.com";
+
 export const metadata: Metadata = {
-  title: "Nikola Stefanovic",
-  description: "Frontend Engineer Portfolio",
+  title: "Nikola Stefanovic — Senior Frontend Engineer",
+  description:
+    "Frontend Software Engineer with 7+ years of experience building scalable web applications for enterprise clients. Specialized in React, Next.js, and TypeScript.",
+  metadataBase: new URL(siteUrl),
+  openGraph: {
+    title: "Nikola Stefanovic — Senior Frontend Engineer",
+    description:
+      "Frontend Software Engineer with 7+ years of experience building scalable web applications for enterprise clients.",
+    url: siteUrl,
+    siteName: "Nikola Stefanovic",
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Nikola Stefanovic — Senior Frontend Engineer",
+    description:
+      "Frontend Software Engineer with 7+ years of experience building scalable web applications for enterprise clients.",
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 export default function RootLayout({
