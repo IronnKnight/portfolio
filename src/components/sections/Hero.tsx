@@ -9,7 +9,7 @@ export function Hero() {
   return (
     <section className="flex min-h-[90vh] items-center pt-16">
       <Container>
-        <div className="grid items-center gap-12 lg:grid-cols-[1fr_auto]">
+        <div className="grid items-center gap-12 md:grid-cols-[1fr_auto]">
           <div>
             <ScrollReveal>
               <span className="mb-4 block font-mono text-sm text-accent">
@@ -30,7 +30,7 @@ export function Hero() {
             </ScrollReveal>
 
             <ScrollReveal delay={0.3}>
-              <div className="flex flex-wrap gap-4">
+              <div className="flex flex-wrap gap-2 md:gap-4">
                 <Button variant="primary" href="#experience">
                   View Experience
                 </Button>
@@ -51,7 +51,6 @@ export function Hero() {
           </div>
 
           <ScrollReveal delay={0.2}>
-            <div className="hidden lg:block">
               <Image
                 src="/headshot.webp"
                 alt={personalInfo.name}
@@ -60,7 +59,6 @@ export function Hero() {
                 priority
                 className="rounded-2xl object-cover"
               />
-            </div>
           </ScrollReveal>
         </div>
       </Container>
