@@ -11,8 +11,8 @@ export const personalInfo: PersonalInfo = {
   statement:
     "Frontend Software Engineer with 7+ years of experience building scalable web applications for large e-commerce and enterprise clients. Specialized in React, Next.js, TypeScript, and modern frontend architecture, with a focus on performance and code quality. Collaborates closely with design and backend teams to deliver cohesive, production-ready solutions.",
   socials: [
-    { label: "GitHub", url: "https://github.com/nikolastef" },
-    { label: "LinkedIn", url: "https://linkedin.com/in/nikolastef" },
+    { label: "GitHub", url: "https://github.com/IronnKnight" },
+    { label: "LinkedIn", url: "https://www.linkedin.com/in/nikola-stefanovic-2a706914b/" },
     { label: "Email", url: "mailto:nikola.stef07@gmail.com" },
   ],
 };

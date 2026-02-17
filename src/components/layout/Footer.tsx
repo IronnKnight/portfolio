@@ -11,7 +11,7 @@ export function Footer() {
 
         <div className="flex items-center gap-4">
           <a
-            href="https://github.com/nikolastef"
+            href="https://github.com/IronnKnight"
             target="_blank"
             rel="noopener noreferrer"
             className="text-muted transition-colors hover:text-foreground"
@@ -20,7 +20,7 @@ export function Footer() {
             <Github size={18} />
           </a>
           <a
-            href="https://linkedin.com/in/nikolastef"
+            href="https://linkedin.com/in/nikola-stefanovic-2a706914b/"
             target="_blank"
             rel="noopener noreferrer"
             className="text-muted transition-colors hover:text-foreground"
